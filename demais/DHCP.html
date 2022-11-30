@@ -1,0 +1,57 @@
+<HTML>
+<HEAD>
+ <TITLE>Comandos</TITLE>
+</HEAD>
+<BODY BGCOLOR="#BDB76B">
+<CENTER><H1>O Que é DHCP</H1></CENTER>
+<br>
+<h2>O protocolo DHCP é um protocolo de cliente/servidor que fornece automaticamente um host ip (protocolo IP) com seu endereço IP e outras informações de configuração relacionadas, como a máscara de sub-rede e o gateway padrão. As RFCs 2131 e 2132 definem o DHCP como um padrão de IETF (Força-Tarefa de Engenharia da Internet) com base no protocolo BOOTP, um protocolo com o qual o DHCP compartilha muitos detalhes de implementação. O DHCP permite que os hosts obtenham informações de configuração TCP/IP necessárias de um servidor DHCP.
+
+Windows Server 2016 inclui o Servidor DHCP, que é uma função de servidor de rede opcional que você pode implantar em sua rede para concessão de endereços IP e outras informações para clientes DHCP. Todos Windows sistemas operacionais cliente baseados em Windows incluem o cliente DHCP como parte do TCP/IP e o cliente DHCP está habilitado por padrão
+</h2>
+<br>
+<center><h1>Por que usar o DHCP?</h1></center>
+<br>
+<h2>Cada dispositivo em uma rede baseada em TCP/IP deve ter um endereço IP unicast exclusivo para acessar a rede e seus recursos. Sem o DHCP, os endereços IP para novos computadores ou computadores que são movidos de uma sub-rede para outra devem ser configurados manualmente; Os endereços IP para computadores removidos da rede devem ser recuperados manualmente.
+
+Com o DHCP, todo esse processo é automatizado e gerenciado centralmente. O servidor DHCP mantém um pool de endereços IP e arrenda um endereço para qualquer cliente habilitado para DHCP quando ele é iniciado na rede. Como os endereços IP são dinâmicos (concessões) em vez de estáticos (atribuídos permanentemente), os endereços que não estão mais em uso são retornados automaticamente ao pool para realocação.
+
+O administrador de rede estabelece servidores DHCP que mantêm informações de configuração TCP/IP e fornecem a configuração de endereço para clientes habilitados para DHCP na forma de uma oferta de concessão. O servidor DHCP armazena as informações de configuração em um banco de dados que inclui:
+
+Parâmetros de configuração TCP/IP válidos para todos os clientes na rede.
+
+Endereços IP válidos, mantidos em um pool para atribuição a clientes, bem como endereços excluídos.
+
+IP Reservado endereços associados a clientes DHCP específicos. Isso permite a atribuição consistente de um único endereço IP para um único cliente DHCP.
+
+A duração da concessão ou o período de tempo para o qual o endereço IP pode ser usado antes que uma renovação de concessão seja necessária.
+
+Um cliente habilitado para DHCP, após aceitar uma oferta de concessão, recebe:
+
+Um endereço IP válido para a sub-rede à qual ela está se conectando.
+
+Opções DHCP solicitadas, que são parâmetros adicionais que um servidor DHCP está configurado para atribuir aos clientes. Alguns exemplos de opções de DHCP são Roteador (gateway padrão), Servidores DNS e Nome de Domínio DNS
+</h2>
+<br>
+<center><h1>Como usar o FTP?</h1></center>
+<br>
+<h2>O DHCP oferece os seguintes benefícios.
+
+Configuração de endereço IP confiável. O DHCP minimiza os erros de configuração causados pela configuração manual de endereço IP, como erros tipográficos ou conflitos de endereço causados pela atribuição de um endereço IP a mais de um computador ao mesmo tempo.
+
+Administração de rede reduzida. O DHCP inclui os seguintes recursos para reduzir a administração de rede:
+
+Configuração TCP/IP centralizada e automatizada.
+
+A capacidade de definir configurações de TCP/IP de um local central.
+
+A capacidade de atribuir um intervalo completo de valores de configuração TCP/IP adicionais por meio de opções DHCP.
+
+O tratamento eficiente de alterações de endereço IP para clientes que devem ser atualizados com frequência, como aqueles para dispositivos portáteis que se movem para locais diferentes em uma rede sem fio.
+
+O encaminhamento de mensagens DHCP iniciais usando um agente de retransmissão DHCP, que elimina a necessidade de um servidor DHCP em cada sub-rede.</h2>
+<BR>
+
+
+</BODY>
+</HTML>

@@ -1,0 +1,83 @@
+<HTML>
+<HEAD>
+ <TITLE>Comandos</TITLE>
+</HEAD>
+<BODY BGCOLOR="#98FB98">
+<CENTER><H1>O Que é FTP</H1></CENTER>
+<br>
+<h2>O FTP cria uma conexão entre o dispositivo do usuário e um servidor, geralmente o equipamento do serviço de hospedagem escolhido. Por meio dele é possível realizar a troca de dados entre os sistemas, quando esses estão devidamente conectados à internet.
+
+O sistema de transferência de arquivos surgiu na década de 1970, com o movimento de evolução da tecnologia computacional, as primeiras redes e conexões. Foi criado por Abhay Bhushan, que na época ainda era um estudante de Engenharia Elétrica no Massachussets Institute of Technology.
+
+O intuito principal do projeto do FTP foi criar um protocolo de transferência mais seguro, que pudesse inibir qualquer tentativa de intrusão e roubo de informações.
+
+Com a evolução do conceito e da tecnologia propriamente dita, por meio da implementação de melhorias nos códigos e o aumento da capacidade de armazenamento dos equipamentos, o FTP se consolidou como um dos métodos mais eficientes de compartilhamento de dados na Internet.
+
+O fluxo de transferência de dados opera por meio de um programa que conecta dois agentes:
+
+cliente: o equipamento que solicita a conexão e o acesso aos dados hospedados;servidor: infraestrutura mais robusta, formada por um ou mais equipamentos usados para embasar operações e armazenar informações — recebe a solicitação do cliente e concede autorização conforme a política de acesso adotada (geralmente, um login e uma senha).Como instalar o FTP?
+
+O acesso ao FTP pode ser feito por meio de uma aplicação específica que requer um login e uma senha para a autorização de uso. Além disso, demanda que o usuário especifique a porta de conexão correta.
+
+O aplicativo da web pode ser fornecido pelo serviço de hospedagem (encontrado na interface do usuário ou painel de controle) ou por meio de programas de terceiros, mais recomendados para operações de arquivo robustas. Esses programas podem ser fornecidos por:
+
+FileZilla;Free FTP;ProFTPd;SmartFTP;Pure-FTPd;VsFTPd;Titan FTP Server;Cyberduck;Kasablanca;WinSCP.
+
+Escolha o programa mais adequado para a sua necessidade, faça o download e instale o cliente de FTP no seu computador.
+</h2>
+<br>
+<center><h1>Como configurar o FTP?</h1></center>
+<br>
+<h2>Se a sua hospedagem WordPress é gerenciada, como a do Stage, é sempre mais conveniente consultar o suporte técnico para saber como instalar, configurar e acessar o FTP. Mas se você não tem uma hospedagem gerenciada, siga os passos que descrevemos a seguir:
+
+inicie o programa instalado;digite o seu endereço de FTP quando solicitado. Essa informação varia conforme o host, mas a maioria mantém os dados acessíveis no painel de controle do servidor (no cPanel, fica em “Contas FTP”). Normalmente esse endereço é o mesmo que o nome de domínio com o prefixo “ftp” (ftp.seusite.com);digite o seu nome de usuário e senha (a mesma definida ao criar sua conta FTP ou usada para acessar o cPanel);digite a porta de acesso FTP – 21 para FTP e 22 para SFTP;clique no botão “Connect” ou ” Quickconnect ” para acessar a sua conta de hospedagem FTP.
+
+Caso o seu domínio não aponte para o seu host, tente usar o IP do servidor, que é especificado na configuração FTP.
+
+Vamos supor que você escolha o FileZilla como sistema para a execução do FTP. Na figura abaixo, você pode ver as seções da interface principal:
+
+Na parte superior você encontra a barra de comandos, o lado direito é o lado do servidor com o qual o FTP está conectado. No lado esquerdo é possível ver os arquivos e diretórios do WordPress e de outros programas em seu computador e a parte inferior exibe o processo de envio de arquivos para o servidor.
+</h2>
+<br>
+<center><h1>Como usar o FTP?</h1></center>
+<br>
+<h2>Para copiar algum arquivo, basta localizá-lo em seu computador na parte esquerda do programa e jogá-lo para a parte direita em seu servidor.
+
+Entretanto, antes de usar o FTP, você deve saber como é feita a estruturação dos arquivos e diretórios no WordPress. Isso é essencial para que o CMS funcione adequadamente, uma vez que a falta de um único arquivo pode derrubar o seu site e causar vários problemas sobre os quais falaremos a seguir.
+
+Além disso, conhecer e saber como acessar os arquivos e diretórios no WordPress pode ajudar você a corrigir vários problemas que podem surgir. Por exemplo, um plugin instalado inadequadamente que bloqueou o acesso ao dashboard de administração do site — a única forma de excluí-lo é por meio do acesso ao FTP.
+
+Pastas
+
+A estrutura do diretório é formado pelas seguintes pastas.
+
+wp-admin
+
+Essa pasta é responsável por gerenciar as ferramentas de administração dos sites WordPress, como o painel administrativo, a conexão com o banco de dados e as permissões de acesso do usuário.
+
+wp-content
+
+A pasta wp-content tem dois subdiretórios: plugins e temas, que armazenam dados relacionados a essas extensões no WordPress. A cada instalação, uma nova subpasta é criada com o nome do elemento adicionado.
+
+wp-includes
+
+Dentro da pasta wp-includes estão todos os arquivos necessários para fazer um site funcionar: as funções do WordPress para controle de posts, páginas, widgets, entre outros recursos.
+
+Arquivos
+
+Além das pastas, o diretório do WordPress, cujo acesso acontece por meio do FTP, é formado por arquivos de configuração, como:
+
+o .htaccess — usado para gerenciar redirecionamentos e links permanentes;o wp-config.php — que ajuda o WP a se conectar com o banco de dados e delimita algumas configurações para os sites;o index.php — arquivo principal, por meio do qual o WP carrega os posts que serão exibidos e usados como substituição sempre que faltar um arquivo base do CMS.
+
+Além desses, o style.css — um arquivo CSS declarativo e necessário para a criação de temas no WordPress — controla a apresentação das páginas. Veja outros arquivos importantes a seguir:
+
+license.txtreadme.htmlwp-activate.phpwp-blog-header.phpwp-comments-post.phpwp-config-sample.phpwp-cron.phpwp-links-opml.phpwp-load.phpwp-login.phpwp-mail.phpwp-settings.phpwp-signup.phpwp-trackback.phpxmlrpc.phprobots.txt
+
+É recomendado que o usuário mantenha a estrutura padrão, pois pequenas modificações podem inviabilizar todo o funcionamento do site. O arquivo zip do WP para download contém todos esses componentes e o usuário precisa apenas extraí-los e enviá-los ao seu serviço de hospedagem por meio do FTP.
+
+Caso você acesse o FTP sem precisar baixar um programa, digite “ftp://número do ip” no navegador para que um prompt de comando solicite o login e senha de acesso.</h2>
+<BR>
+
+
+</BODY>
+</HTML>
